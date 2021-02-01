@@ -95,60 +95,100 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+* {
+  box-sizing: border-box;
+}
 
 html {
   background-color: #2b2b2b;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
   font-size: 1.25em;
-  height: 100%;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  background-image: url(../img/splash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.hero {
+  text-transform: uppercase;
+  font-weight: normal;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
-  flex-flow: wrap;
-  border-bottom: 2px solid #fff;
-
-}
-
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
-  line-height: 1.5em;
-  font-size: .5em;
-  height: 200px;
-  display: flex;
-  width: 30%;
   justify-content: center;
   align-items: center;
-  flex-flow: wrap;
-  padding-bottom: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding-top: 120px;
+  padding-bottom: 150px;
 }
 
- .div-2 {
-   border-left: 1px solid #eee;
-   border-right: 1px solid #eee;
-   padding: 0 30px;
-
+.div-1, .div-2 {
+  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+  line-height: 1.5em;
+  font-size: 0.5em;
+  height: 100px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
 }
 
-h1 {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
+.div-1 {
+  line-height: 1.7em;
+  padding-right: 5px;
+  padding-top: 15px;
 }
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+footer img {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -312,4 +352,171 @@ h1 {
     h3 {
         page-break-after: avoid;
     }
+}
+
+/*---------- TABLET min-width: 768px ----------*/
+
+@media (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 2em;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/splash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .hero {
+    text-transform: uppercase;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .wrapper {
+    /*add display:flex and set justify-content to space-between*/
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+  }
+
+  .div-1, .div-2 {
+    /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+    line-height: 1.5em;
+    font-size: .7em;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .div-1 {
+    padding-bottom: 55px;
+    padding-right: 5px;
+  }
+
+  footer img {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 50px;
+  }
+
+}
+
+/*---------- Desktops max-width: 1200px----------*/
+@media (min-width: 1200px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 2em;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/splash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .hero {
+    text-transform: uppercase;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero p {
+    font-weight: bold;
+  }
+
+  .wrapper {
+    /*add display:flex and set justify-content to space-between*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+  }
+
+  .div-1, .div-2 {
+    /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+    line-height: 1.5em;
+    font-size: 0.9em;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .div-1 {
+    padding-right: 5px;
+    padding-bottom: 10px;
+    line-height: 1.8em;
+  }
+
+  footer img {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 50px;
+  }
+
 }
