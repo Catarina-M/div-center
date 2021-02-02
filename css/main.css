@@ -113,7 +113,6 @@ body {
   padding: 2em;
   font-size: 1.25em;
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,6 +156,7 @@ body {
   border-bottom: 1px solid #fff;
   padding-top: 120px;
   padding-bottom: 150px;
+
 }
 
 .div-1, .div-2 {
@@ -166,18 +166,17 @@ body {
   height: 100px;
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: 'Raleway', sans-serif;
 }
 
 .div-1 {
-  line-height: 1.7em;
-  padding-right: 5px;
-  padding-top: 15px;
+  line-height: 1.9em;
 }
 
 footer {
+  height: 0;
   margin: 0;
   padding: 0;
 }
@@ -357,58 +356,6 @@ footer img {
 /*---------- TABLET min-width: 768px ----------*/
 
 @media (min-width: 768px) {
-  * {
-    box-sizing: border-box;
-  }
-
-  html {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  body {
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 2em;
-    font-size: 1.25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/splash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-
-  .hero {
-    text-transform: uppercase;
-    font-weight: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    border: 1px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-
-  .wrapper {
-    /*add display:flex and set justify-content to space-between*/
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #fff;
-  }
 
   .div-1, .div-2 {
     /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
@@ -418,12 +365,11 @@ footer img {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   .div-1 {
     padding-bottom: 55px;
-    padding-right: 5px;
+    flex-shrink: 3;
   }
 
   footer img {
@@ -438,61 +384,7 @@ footer img {
 
 /*---------- Desktops max-width: 1200px----------*/
 @media (min-width: 1200px) {
-  * {
-    box-sizing: border-box;
-  }
 
-  html {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  body {
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 2em;
-    font-size: 1.25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/splash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-
-  .hero {
-    text-transform: uppercase;
-    font-weight: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    border: 1px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero p {
-    font-weight: bold;
-  }
-
-  .wrapper {
-    /*add display:flex and set justify-content to space-between*/
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #fff;
-  }
 
   .div-1, .div-2 {
     /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
@@ -506,7 +398,7 @@ footer img {
   }
 
   .div-1 {
-    padding-right: 5px;
+    flex-shrink: 1;
     padding-bottom: 10px;
     line-height: 1.8em;
   }
